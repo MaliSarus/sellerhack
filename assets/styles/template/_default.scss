@@ -1,0 +1,11 @@
+.default-template {
+  main {
+    padding-bottom: calc(var(--space-9) + 64px);
+    @include media-breakpoint-up(md) {
+      padding-bottom: calc(var(--space-9) + 72px);
+    }
+    @include media-breakpoint-up(lg) {
+      padding-bottom: var(--space-9);
+    }
+  }
+}

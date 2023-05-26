@@ -1,0 +1,26 @@
+* {
+  // font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto Flex', sans-serif !important;
+  box-sizing: border-box;
+}
+
+.content {
+  > :first-child {
+    margin-top: 0 !important;
+  }
+
+  > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+input {
+  &[type='number']::-webkit-inner-spin-button,
+  &[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+}

@@ -1,0 +1,61 @@
+.simplebar-scrollbar {
+  pointer-events: all;
+  cursor: pointer;
+  &:active {
+    &::before {
+      background-color: var(--accent1-primary-color);
+    }
+  }
+  &::before {
+    background: var(--stroke-color);
+    border-radius: 4px;
+
+    opacity: 1;
+    transition: background-color 0.3s;
+  }
+  &.simplebar-visible {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.simplebar-track {
+  &.simplebar-vertical {
+    background-color: var(--disabled-bg-color);
+    top: 0;
+    width: 4px;
+    border-radius: 4px;
+    &.simplebar-hover {
+      .simplebar-scrollbar {
+        &:active {
+          &::before {
+            background-color: var(--accent1-secondary-color);
+          }
+        }
+        &::before {
+          background-color: var(--accent1-tertiary-color);
+        }
+      }
+    }
+    .simplebar-scrollbar {
+      &::before {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  &.simplebar-horizontal {
+    left: 0;
+    height: 4px;
+    .simplebar-scrollbar {
+      right: auto;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      min-height: 0;
+      min-width: 10px;
+      width: auto;
+    }
+  }
+}
