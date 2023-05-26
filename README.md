@@ -1,42 +1,41 @@
-# Nuxt 3 Minimal Starter
+# Sellerhack
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Данный проект создан с ипользованием Git подмодулей и Nuxt Layers (extends)
 
-## Setup
+## Развертка проекта
 
-Make sure to install the dependencies:
+Склонируйте репозиторий вместе с подмодулями через
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+git clone <project-url> --recurse-submodules
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`
+Установите зависимости проекта и подмодулей:
 
 ```bash
+cd ./pricehack
+npm i
+
+сd ./pricehack-ui
+npm i
+```
+
+Запустите режим разработки
+
+```bash
+cd ./pricehack
 npm run dev
+
 ```
 
-## Production
-
-Build the application for production:
+Или создание билда
 
 ```bash
+cd ./pricehack
 npm run build
+
 ```
 
-Locally preview production build:
+## Подмодуль UI
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Подмодуль pricehack-ui является отдельным малым nuxt-проектом со storybook + vite. При изменениях внутри pricehack-ui нужно будет выполнить пуш изменения в репозиторий pricehack-ui,а также в репозиторий pricehack.
