@@ -1,0 +1,3 @@
+[submodule "pricehack-ui"]
+	path = pricehack-ui
+	url = git@github.com:MaliSarus/pricehack-ui.git
