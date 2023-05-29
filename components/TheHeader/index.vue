@@ -26,7 +26,7 @@ const search = ref('');
           <div class="col-12">
             <div class="header__top-block">
               <div
-                class="header__location color_text-primary text-xs-semibold text-s-semibold_xl"
+                class="header__location color_text-primary text-xs-medium text-s-medium_xl"
               >
                 <el-icon><LocationIcon12 /></el-icon>Ханты-Мансийск
               </div>
@@ -50,7 +50,7 @@ const search = ref('');
               </nav>
               <a
                 href="tel:+78634565676"
-                class="header__phone color_text-primary text-s-semibold text-m-semibold_xl"
+                class="header__phone color_text-primary text-s-medium text-m-medium_xl"
                 >+ 7 (863) 456-56-76</a
               >
             </div>

@@ -182,7 +182,7 @@ const currentStepComponent = computed(() => {
 
     &.active {
       color: var(--accent1-primary-color);
-      font-weight: var(--text-m-semibold__font-weight);
+      font-weight: var(--text-m-medium__font-weight);
       .tabbed-form-card {
         &__tab-number {
           background-color: var(--accent1-primary-color);
